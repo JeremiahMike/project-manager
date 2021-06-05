@@ -39,7 +39,7 @@
           </v-avatar>
           <p class="white--text subheading mt-1 text-center">Username</p>
         </v-flex>
-        <v-flex class="mt-4 mb-4"> </v-flex>
+        <v-flex class="mt-4 mb-4"> <Popup /> </v-flex>
       </v-layout>
       <v-list flat>
         <v-list-item
@@ -61,6 +61,7 @@
   </nav>
 </template>
 <script>
+import Popup from "../components/Popup.vue";
 export default {
   data: () => ({
     drawer: true,
@@ -70,6 +71,9 @@ export default {
       { icon: "mdi-account", text: "Team", route: "/team" },
     ],
   }),
+  components: {
+    Popup,
+  },
 };
 </script>
 <style scoped>
