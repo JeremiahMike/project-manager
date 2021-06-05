@@ -18,7 +18,7 @@
               <span class="caption text-lowercase">By project title</span>
             </v-btn>
           </template>
-          <span>Sort project</span>
+          <span>Sort by project title</span>
         </v-tooltip>
         <v-tooltip bottom>
           <template v-slot:activator="{ on }">
@@ -35,7 +35,7 @@
               <span class="caption text-lowercase">By name</span>
             </v-btn>
           </template>
-          <span>Sort person</span>
+          <span>Sort by name</span>
         </v-tooltip>
       </v-layout>
       <v-card
@@ -64,15 +64,13 @@
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
   name: "projects",
   components: {},
   data: () => ({
     projects: [
       {
-        title: "Website",
+        title: "Website 1",
         person: "Lorem Ipsum",
         due: "10/10/1987",
         status: "no",
@@ -84,13 +82,13 @@ export default {
         status: "complete",
       },
       {
-        title: "Website",
+        title: "Website 2",
         person: "Lorem Ipsum",
         due: "01/05/1987",
         status: "yes",
       },
       {
-        title: "Website",
+        title: "Website 3",
         person: "Lorem Ipsum",
         due: "02/09/1991",
         status: "up",

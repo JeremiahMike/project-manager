@@ -109,7 +109,7 @@
 
 <script>
 export default {
-  name: "team",
+  name: "dashboard",
   components: {},
   data: () => ({
     team: [
