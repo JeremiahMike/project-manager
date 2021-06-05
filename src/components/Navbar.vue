@@ -1,10 +1,10 @@
 <template>
   <nav>
-    <v-app-bar color="red" dark app>
+    <v-app-bar color="green" dark app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase ">
-        <span class="font-weight-light">AAE</span>
-        <span>IdeaPro</span>
+        <span class="font-weight-light">Project</span>
+        <span>Manager</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-menu offset-y>
@@ -31,11 +31,11 @@
         <v-icon right>mdi-exit-to-app</v-icon>
       </v-btn>
     </v-app-bar>
-    <v-navigation-drawer v-model="drawer" dark app class="red darken-4">
+    <v-navigation-drawer v-model="drawer" dark app class="green darken-4">
       <v-layout column align-center>
         <v-flex class="mt-5">
           <v-avatar size="100">
-            <img src="/img1.png" alt="" />
+            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="" />
           </v-avatar>
           <p class="white--text subheading mt-1 text-center">Username</p>
         </v-flex>
@@ -65,9 +65,9 @@ export default {
   data: () => ({
     drawer: true,
     links: [
-      { icon: "dashboard", text: "Dashboard", route: "/" },
-      { icon: "folder", text: "My Project", route: "/projects" },
-      { icon: "person", text: "Team", route: "/team" },
+      { icon: "mdi-view-dashboard", text: "Dashboard", route: "/" },
+      { icon: "mdi-folder", text: "My Project", route: "/projects" },
+      { icon: "mdi-account", text: "Team", route: "/team" },
     ],
   }),
 };

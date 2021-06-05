@@ -4,11 +4,13 @@
     <v-main class="ma-4">
       <router-view />
     </v-main>
+    <Footer />
   </v-app>
 </template>
 
 <script>
 import Navbar from "../src/components/Navbar.vue";
+import Footer from "../src/components/Footer.vue";
 export default {
   name: "App",
 
@@ -17,6 +19,7 @@ export default {
   }),
   components: {
     Navbar,
+    Footer,
   },
 };
 </script>
